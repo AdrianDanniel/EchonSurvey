@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    
+    <h1 id="title">Survey Form</h1>
+
+    
+    <p id="description">Please fill out the survey form below to share your feedback with us.</p>
+
+   
+    <form id="survey-form">
+        
+        
+        <label id="name-label" for="name">Name:</label>
+        <input id="name" type="text" placeholder="Enter your name" required>
+
+       
+        <label id="email-label" for="email">Email:</label>
+        <input id="email" type="email" placeholder="Enter your email" required>
+
+        
+        <label id="number-label" for="number">Age:</label>
+        <input id="number" type="number" min="1" max="120" placeholder="Enter your age" required>
+
+        
+        <label for="dropdown">Favorite Language:</label>
+        <select id="dropdown" required>
+            <option value="javascript">JavaScript</option>
+            <option value="python">Python</option>
+            <option value="ruby">Java</option>
+            <option value="ruby">HTML</option>
+            <option value="ruby">CSS</option>
+        </select>
+
+       
+        <p>How would you rate our service?</p>
+        <input type="radio" id="excellent" name="rating" value="excellent" required>
+        <label for="excellent">Excellent</label>
+        <input type="radio" id="good" name="rating" value="good">
+        <label for="good">Good</label>
+        <input type="radio" id="fair" name="rating" value="fair">
+        <label for="fair">Fair</label>
+
+        
+        <p>Select your areas of interest:</p>
+        <input type="checkbox" id="webdev" name="interest" value="webdev">
+        <label for="webdev">Web Development</label>
+        <input type="checkbox" id="ml" name="interest" value="ml">
+        <label for="ml">Machine Learning</label>
+        <input type="checkbox" id="datasci" name="interest" value="datasci">
+        <label for="datasci">Data Science</label>
+
+        
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" placeholder="Enter your comments here"></textarea>
+
+        
+        <button id="submit" type="submit">Submit</button>
+
+    </form>
+
+</body>
+</html>
